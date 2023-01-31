@@ -1,0 +1,43 @@
+#heroMain {
+    padding: 1rem;
+
+    header{
+        color: var(--secondary-color);
+        font-size: 1.3rem;
+    }
+    span {
+        font-size: 2.5rem;
+    }
+    .subtitle {
+        font-size: 2.5rem;
+        color: rgb(58, 55, 55);
+    }
+    button {
+        border: 2px solid var(--secondary-color);
+        border-radius: 20px;
+        padding: .5rem 1.5rem;
+        font-size: .9rem;
+        margin: 0;
+        width: max-content;
+    }
+    @media screen and (min-width:1200px) {
+        header {
+            font-size: 1.5rem;
+        }
+        span {
+            font-size: 4rem;
+        }
+        .subtitle {
+            font-size: 4rem;
+        }
+        
+    }
+}
+.subhero {
+    margin: 2rem 0;
+    font-size: 1.1rem;
+    
+    p {
+        margin: 0.5rem 0;
+    }
+}
