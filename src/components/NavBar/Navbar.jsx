@@ -10,7 +10,7 @@ export default function NavBar(){
                 {["about","experience", "work", "contact"].map((item,index)=>{
                     return <li>
                         <div className="hoverIcon" />
-                        <a href={`#${item}`}>{`${index+1} ${item}`}</a>
+                        <a href={`#${item}`}>{`0${index+1}. ${item}`}</a>
                     </li>
                 })}
                 <button id="Navbar__button">View CV</button>
