@@ -2,27 +2,17 @@ import { useState } from "react"
 import "./Navbar.scss"
 
 export default function NavBar(){
-    const [showNav,setShowNav] = useState(true)
+    const [showNav,setShowNav] = useState(false)
     return (
         <main id="Navbar">
             <span>G</span>
             <ul id="Navbar__ul">
-                <li>
-                    <div className="hoverIcon"></div>
-                    <a href="#about">01. About</a>
-                </li>
-                <li>
-                    <div className="hoverIcon"></div>
-                    <a href="#experience">02. Experience </a>
+                {["about","experience", "work", "contact"].map((item,index)=>{
+                    return <li>
+                        <div className="hoverIcon" />
+                        <a href={`#${item}`}>{`${index+1} ${item}`}</a>
                     </li>
-                <li>
-                    <div className="hoverIcon"></div>
-                    <a href="#work"> 03. Work </a>
-                </li>
-                <li>
-                    <div className="hoverIcon"></div>
-                    <a href="#contact"> 04. Contact </a>
-                </li>
+                })}
                 <button id="Navbar__button">View CV</button>
             </ul>
             <section className="Navbar__sideNav">
