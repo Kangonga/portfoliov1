@@ -22,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5rem;
+    padding: .5rem 3rem .5rem .5rem;
     width: 70%;
 
     button {
@@ -32,7 +32,7 @@
         font-size: .9rem;
     }
 
-    @media  (max-width: 651px) {
+    @media  (max-width: 679px) {
        display: none;
     }
 }
@@ -64,13 +64,13 @@
         left: 25%;
     }
 
-    @media (min-width:650px) {
+    @media (min-width:680px) {
         display: none;
     }
 }
 .nav_close-open {
     position: absolute;
-    top: 2.5rem;
+    top: 4.5vh;
     right: 0;
     // background-color: aqua;
 }
